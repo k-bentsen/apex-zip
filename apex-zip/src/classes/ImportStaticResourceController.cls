@@ -59,7 +59,7 @@ public with sharing class ImportStaticResourceController
 		{
 			// Update existing Static Resource
 			List<MetadataService.Metadata> updateMetadatas = new List<MetadataService.Metadata>();
-			updateMetadatas.add(new MetadataService.UpdateMetadata());
+			updateMetadatas.add(new MetadataService.Metadata());
 			updateMetadatas[0].currentName = RESOURCE_NAME;
 			updateMetadatas[0].metadata = staticResource;
  			AsyncResult = service.updateMetadata(updateMetadatas)[0];			
