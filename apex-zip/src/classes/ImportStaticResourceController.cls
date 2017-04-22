@@ -58,7 +58,7 @@ public with sharing class ImportStaticResourceController
 		if(mapFileProperties.containsKey(RESOURCE_NAME))
 		{
 			// Update existing Static Resource
-			List<MetadataService.UpdateMetadata> updateMetadatas = new List<MetadataService.UpdateMetadata>();
+			List<MetadataService.Metadata> updateMetadatas = new List<MetadataService.Metadata>();
 			updateMetadatas.add(new MetadataService.UpdateMetadata());
 			updateMetadatas[0].currentName = RESOURCE_NAME;
 			updateMetadatas[0].metadata = staticResource;
