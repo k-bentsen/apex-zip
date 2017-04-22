@@ -58,11 +58,11 @@ public with sharing class ImportStaticResourceController
 		if(mapFileProperties.containsKey(RESOURCE_NAME))
 		{
 			// Update existing Static Resource
-			List<MetadataService.Metadata> updateMetadatas = new List<MetadataService.Metadata>();
-			updateMetadatas.add(new MetadataService.Metadata());
-			updateMetadatas[0].currentName = RESOURCE_NAME;
-			updateMetadatas[0].metadata = staticResource;
- 			AsyncResult = service.updateMetadata(updateMetadatas)[0];			
+			//List<MetadataService.Metadata> updateMetadatas = new List<MetadataService.Metadata>();
+			//updateMetadatas.add(new MetadataService.Metadata());
+			//updateMetadatas[0].currentName = RESOURCE_NAME;
+			//updateMetadatas[0].metadata = staticResource;
+ 			AsyncResult = service.updateMetadata(new List<MetadataService.Metadata> { staticResource })[0];			
 		}
 		else
 		{
