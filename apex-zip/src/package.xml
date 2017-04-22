@@ -2,7 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>ImportStaticResourceController</members>
-        <members>MetadataService</members>
         <members>UnzipDemoController</members>
         <members>ZipDemoController</members>
         <name>ApexClass</name>
